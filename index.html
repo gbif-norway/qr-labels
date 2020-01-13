@@ -1,0 +1,72 @@
+<!doctype html>
+<meta charset='utf-8'>
+<title>QR-koder</title>
+<style>
+  dd { margin: 0 0 0 1em; }
+</style>
+
+<dl>
+  <dt><b>NHM-samlinger</b></dt>
+  <dd>
+    <form action="nhm.cgi">
+      <p>
+        <label>Tekst:</label>
+        <input name="text">
+
+      <p>
+        <label>Fra:</label>
+        <input value="1000" name="fra">
+
+        <label>Til:</label>
+        <input value="1100" name="til">
+
+      <p>
+        <input type="submit" value="Lag QR-koder">
+    </form>
+  </dd>
+
+
+  <dt><b>Kvartærsamlingen</b></dt>
+  <dd>
+    <form action="quaternary.cgi">
+      <p>
+        <label>Tekst:</label>
+        <input name="text">
+
+      <p>
+        <label>Fra:</label>
+        <input value="PMO1000" name="fra">
+
+        <label>Til:</label>
+        <input value="PMO1100" name="til">
+
+      <p>
+        <input type="submit" value="Lag QR-koder">
+    </form>
+  </dd>
+
+  <dt><b>Annet</b></dt>
+  <dd>
+    <form action="test.cgi">
+      <p>
+        <label>Overskrift:</label>
+        <input name="h">
+
+      <p>
+        <label>Tekst:</label>
+        <input name="text">
+
+      <p>
+        <label>Fra:</label>
+        <input value="1" name="fra">
+
+        <label>Til:</label>
+        <input value="1000" name="til">
+
+      <p>
+        <input type="submit" value="Lag QR-koder">
+
+    </form>
+  </dd>
+</dl>
+
