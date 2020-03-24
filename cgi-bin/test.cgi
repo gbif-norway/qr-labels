@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 # encoding: utf-8
 
-require 'prawn'
 require 'cgi'
+require 'prawn'
 
 PAGES = 5
 COLS = 4
@@ -26,6 +26,7 @@ PAGES.times do |n|
 
       code = `uuidgen`.strip
       `/usr/bin/qrencode -s 4 -l M -o /tmp/#{code}.png "#{PREFIX}#{code}"`
+      `convert /tmp/#{code}.png /tmp/#{code}.png`
       box = pdf.grid(row, col)
       pdf.font_size 6
       pdf.stroke_color "cccccc"
