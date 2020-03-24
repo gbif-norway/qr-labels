@@ -8,7 +8,7 @@ RUN apt-get update && apt-get -y install \
     imagemagick \
     vim
 
-ENV VIRTUAL_HOST=qr.local
+ENV VIRTUAL_HOST=qr.gbif.no
 
 COPY index.html /var/www/html/index.html
 COPY cgi-bin/* /usr/lib/cgi-bin/
