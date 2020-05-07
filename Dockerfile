@@ -9,6 +9,7 @@ RUN apt-get update && apt-get -y install \
     vim
 
 ENV VIRTUAL_HOST=qr.gbif.no
+EXPOSE 80
 
 COPY index.html /var/www/html/index.html
 COPY cgi-bin/* /usr/lib/cgi-bin/
