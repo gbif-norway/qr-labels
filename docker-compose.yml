@@ -2,9 +2,14 @@ version: '3'
 
 services:
   web:
+    restart: always
     build: .
+    image: qr:latest
     expose: 
      - 80
+    environment:
+      - VIRTUAL_HOST=qr.gbif.no
+      - LETSENCRYPT_HOST=qr.gbif.no
 
 networks:
   default:

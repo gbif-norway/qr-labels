@@ -8,9 +8,6 @@ RUN apt-get update && apt-get -y install \
     imagemagick \
     vim
 
-ENV VIRTUAL_HOST=qr.gbif.no
-EXPOSE 80
-
 COPY index.html /var/www/html/index.html
 COPY cgi-bin/* /usr/lib/cgi-bin/
 COPY 10-cgi.conf /etc/lighttpd/conf-enabled/
